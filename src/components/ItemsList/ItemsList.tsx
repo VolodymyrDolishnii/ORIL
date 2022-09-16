@@ -79,8 +79,8 @@ export const ItemsList: React.FC<Props> = ({ items, sortBy, query, setQuery, isL
                                             .replace('-', '.')}
                                         </td>
                                         {item.isActive === true
-                                            ? (<td style={{ "color": "green" }}>Active</td>)
-                                            : (<td style={{ "color": "red" }}>Disable</td>)}
+                                            ? (<td style={{ "color": "#5D5FEF" }}>Active</td>)
+                                            : (<td style={{ "color": "#EF5DA8" }}>Disable</td>)}
                                     </tr>
                                 ))}
                             </tbody>
