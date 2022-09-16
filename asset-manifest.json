@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/oril/static/css/main.e2009c6b.css",
-    "main.js": "/oril/static/js/main.f5a6acf3.js",
+    "main.js": "/oril/static/js/main.b50f8df8.js",
     "index.html": "/oril/index.html",
     "main.e2009c6b.css.map": "/oril/static/css/main.e2009c6b.css.map",
-    "main.f5a6acf3.js.map": "/oril/static/js/main.f5a6acf3.js.map"
+    "main.b50f8df8.js.map": "/oril/static/js/main.b50f8df8.js.map"
   },
   "entrypoints": [
     "static/css/main.e2009c6b.css",
-    "static/js/main.f5a6acf3.js"
+    "static/js/main.b50f8df8.js"
   ]
 }
