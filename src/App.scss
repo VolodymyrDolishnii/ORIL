@@ -130,3 +130,9 @@ iframe {
         opacity: 0.8;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .container {
+      padding: 10px;
+    }
+}
