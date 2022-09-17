@@ -213,7 +213,7 @@ export const GraphPage: React.FC = () => {
                                     <div className="stats">
                                         <div className="graphInfo__item">
                                             <h1 className="graphInfo__header">Total</h1>
-                                            <h1 className="graphInfo__mainValue">{`$${total}`}</h1>
+                                            <h1 className="graphInfo__mainValue">{`$ ${ total}`}</h1>
                                         </div>
 
                                         <div className="stats__other">

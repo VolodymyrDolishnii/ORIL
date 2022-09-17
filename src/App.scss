@@ -135,4 +135,17 @@ iframe {
     .container {
       padding: 10px;
     }
+
+    .top {
+        padding: 10px;
+        &__header {
+            letter-spacing: -1px;
+        }
+
+        &__buttons {
+            & button {
+                letter-spacing: -1px;
+            }
+        }
+    }
 }
