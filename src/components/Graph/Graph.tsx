@@ -188,11 +188,17 @@ export const GraphPage: React.FC = () => {
                                             bottom: 0,
                                         }}
                                     >
+                                        <defs>
+                                            <linearGradient id="colorView" x1="0" y1="0" x2="0" y2="1">
+                                                <stop offset="55%" stopColor="#007AFF" stopOpacity={0.5} />
+                                                <stop offset="100%" stopColor="#007AFF" stopOpacity={0.1} />
+                                            </linearGradient>
+                                        </defs>
                                         <CartesianGrid />
-                                        <XAxis dataKey={"date"} />
-                                        <YAxis domain={[0, 1000]} />
+                                        <XAxis dataKey={"date"} style={{ "fontSize": "12px" }} />
+                                        <YAxis domain={[0, 1000]} unit="$" />
                                         <Tooltip content={<CustomTooltip active={true} payload={undefined} />} />
-                                        <Area connectNulls type='monotone' dataKey="curency" stroke="#007AFF" fill="#007AFF" />
+                                        <Area connectNulls type='monotone' dataKey="curency" stroke="#007AFF" fill="url(#colorView)" />
                                     </AreaChart>
                                 </ResponsiveContainer>
                             )
