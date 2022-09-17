@@ -95,7 +95,7 @@ export const GraphPage: React.FC = () => {
             }
         }
 
-        return Math.round(result);
+        return +result.toFixed(2);
     }
 
     const getMin = (array: Graph[]) => {
@@ -107,11 +107,11 @@ export const GraphPage: React.FC = () => {
             }
         }
 
-        return Math.round(result);
+        return +result.toFixed(2);
     }
 
     const getMedium = (total: number, length: number) => {
-        return Math.round(total / length);
+        return +(total / length).toFixed(2);
     }
 
     useEffect(() => {
@@ -122,7 +122,7 @@ export const GraphPage: React.FC = () => {
 
         setTimeout(() => {
             setIsCalculating(false);
-        }, 1200);
+        }, 1500);
     }, [period, total, graphData]);
 
     const CustomTooltip = ({ active, payload }: ICustomToolip) => {
@@ -134,7 +134,7 @@ export const GraphPage: React.FC = () => {
                     border: "2px solid #007AFF",
                 }}
                 >
-                    <p className="label">{`${payload[0].value}`}</p>
+                    <p className="label">{`${String(payload[0].value) === 'null' ? 'No data' : payload[0].value }`}</p>
                 </div>
             );
         }
